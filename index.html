@@ -3,11 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Ping coming soon page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="styles.css" rel="stylesheet">
+  <link href="text-styles.css" rel="stylesheet">
 
+  <title>Frontend Mentor | Ping coming soon page</title>
 </head>
 <body>
   <div id="wrapper">
@@ -17,9 +21,11 @@
         <h1>We are launching soon!</h1>
         <p>Subscribe and get notified</p>
       </hgroup>
-      <input type="email" id="email" placeholder="Your email address..." required>
-      <button type="submit">Notify Me</button>
-      <img src="images/illustration-dashboard.png">
+      <form>
+        <input type="email" id="email" placeholder="Your email address..." required>
+        <button type="submit">Notify Me</button>
+      </form>
+      <img src="images/illustration-dashboard.png" style="max-width:600px;">
       <footer>
         social media logos
         <p>&copy; Copyright Ping. All rights reserved.</p>

@@ -1,0 +1,26 @@
+:root {
+  --blue: hsl(223, 87%, 63%);
+  --paleblue: hsl(223, 100%, 88%);
+  --lightred: hsl(354, 100%, 66%);
+  --gray: hsl(0, 0%, 59%);
+  --verydarkblue: hsl(209, 33%, 12%)
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: white;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+#wrapper {
+  width: 100vw;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
