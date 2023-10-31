@@ -16,12 +16,16 @@ body {
 
 #wrapper {
   width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
@@ -32,6 +36,41 @@ header img {
 form {
   display: flex;
   flex-direction: column; /* change for desktop design */
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+}
+
+input {
+  border: 1px solid var(--paleblue);
+  outline: 0;
+  padding: .7rem 1.5rem;
+  border-radius: 1.5rem;
+  width: 230px;
+}
+
+input::placeholder {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 12px;
+  color: var(--paleblue);
+}
+
+button {
+  border: 0;
+  outline: 0;
+  padding: .7rem 1.5rem;
+  border-radius: 1.5rem;
+  width: 100%;
+  background-color: var(--blue);
+  /* box-shadow */
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+}
+
+button:hover { /* adjust for JS later */
+  background-color: rgb(79, 125, 243, 0.9);
 }
 
 main img {
@@ -54,9 +93,15 @@ footer {
 #social-media i {
   width: 15px;
   height: 15px;
-  border: 1px solid var(--gray);
+  border: 1px solid var(--paleblue);
   padding: 10px;
   border-radius: 50%;
+}
+
+#social-media i:hover { /* adjust for JS later */
+  color: white;
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
 }
 
 #social-media i:first-child {
