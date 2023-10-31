@@ -24,3 +24,47 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+header img {
+  width: 65px;
+}
+
+form {
+  display: flex;
+  flex-direction: column; /* change for desktop design */
+}
+
+main img {
+  width:320px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem
+}
+
+#social-media {
+  display: flex;
+  justify-content: center;
+  gap: .5rem;
+  color: var(--blue);
+}
+
+#social-media i {
+  width: 15px;
+  height: 15px;
+  border: 1px solid var(--gray);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+#social-media i:first-child {
+  padding-left: 12px;
+  width: 13px;
+}
+
+#social-media i:last-child {
+  padding-left: 11px;
+  width: 14px;
+}

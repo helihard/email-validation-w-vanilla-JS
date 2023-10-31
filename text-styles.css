@@ -2,6 +2,36 @@ hgroup {
   text-align: center;
 }
 
+h1 {
+  margin: 2.3rem 0 1.2rem; /*change for desktop design */
+  font-size: 23px;
+  font-weight: 300;
+  color: var(--gray);
+}
+
+p {
+  margin: 0;
+}
+
+hgroup strong {
+  color: var(--verydarkblue);
+}
+
+hgroup p {
+  font-size: 13px;
+  color: var(--verydarkblue);
+  margin-bottom: 1.8rem;
+}
+
+strong {
+  font-weight: 700;
+}
+
+footer p {
+  font-size: 10px;
+  color: var(--gray);
+}
+
 .attribution { 
   font-size: 11px; 
   text-align: center; 
