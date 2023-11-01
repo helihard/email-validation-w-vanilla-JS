@@ -1,0 +1,68 @@
+@media (min-width: 600px) {
+  h1 {
+    margin: 2rem 0 1rem;
+    font-size: 30px;
+    letter-spacing: .9px;
+    word-spacing: -.5px;
+  }
+
+  hgroup p {
+    font-size: 13.5px;
+  }
+
+  form {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 430px;
+    gap: .6rem;
+  }
+
+  #main-input-div {
+    text-align: left;
+  }
+
+  input {
+    padding: .65rem 1.3rem;
+  }
+
+  #error-message {
+    margin-left: 1.2rem;
+    margin-bottom: 0;
+  }
+
+  button {
+    width: calc(430px -230px .6rem);
+  }
+
+  main img {
+    width: 430px;
+    margin-top: 3.3rem;
+    margin-bottom: 3.7rem;
+  }
+
+  footer {
+    gap: 1.5rem;
+  }
+
+  #social-media i {
+    width: 8px;
+    height: 8px;
+    padding: 8px;
+    font-size: 12px;
+  }
+  
+  #social-media i:first-child, #social-media i:last-child {
+    font-size: 12px;
+  }
+  
+  #social-media i:first-child {
+    padding-right: 7.5px;
+    width: 8.2px;
+  }
+  
+  #social-media i:last-child {
+    padding-left: 7.9px;
+    width: 8.3px;
+  }
+}

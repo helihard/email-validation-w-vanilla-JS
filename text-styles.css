@@ -6,6 +6,8 @@ h1 {
   margin: 2.3rem 0 1.2rem; /*change for desktop design */
   font-size: 23px;
   font-weight: 300;
+  letter-spacing: .6px;
+  word-spacing: -.2px;
   color: var(--gray);
 }
 
@@ -20,7 +22,7 @@ hgroup strong {
 hgroup p {
   font-size: 13px;
   color: var(--verydarkblue);
-  margin-bottom: 1.8rem;
+  margin-bottom: 1.9rem;
 }
 
 strong {
@@ -28,14 +30,16 @@ strong {
 }
 
 #error-message {
-  margin: .35rem 0 1.4rem;
-  font-size: 10px;
+  margin-top: -.2rem;
+  margin-bottom: 1.4rem;
+  font-size: 10.5px;
   color: var(--lightred);
   font-style: italic;
 }
 
 footer p {
-  font-size: 10px;
+  font-size: 10.5px;
+  letter-spacing: .1px;
   color: var(--gray);
 }
 
