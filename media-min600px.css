@@ -19,7 +19,7 @@
   }
 
   #main-input-div {
-    text-align: left;
+    align-items: flex-start;
   }
 
   input {
@@ -27,6 +27,11 @@
   }
 
   #error-message {
+    margin-left: 1.2rem;
+    margin-bottom: 0;
+  }
+
+  #thank-you-message {
     margin-left: 1.2rem;
     margin-bottom: 0;
   }
