@@ -25,7 +25,10 @@
         <p>Subscribe and get notified</p>
       </hgroup>
       <form>
-        <input type="email" id="email" placeholder="Your email address..." required>
+        <div id="main-input-div">
+          <input type="text" id="email" placeholder="Your email address..." required>
+          <p id="error-message">Please provide a valid email address</p>
+        </div>
         <button type="submit">Notify Me</button>
       </form>
       <main>

@@ -3,7 +3,7 @@
   --paleblue: hsl(223, 100%, 88%);
   --lightred: hsl(354, 100%, 66%);
   --gray: hsl(0, 0%, 59%);
-  --verydarkblue: hsl(209, 33%, 12%)
+  --verydarkblue: hsl(209, 33%, 12%);
 }
 
 body {
@@ -41,12 +41,19 @@ form {
   width: 280px;
 }
 
+#main-input-div {
+  text-align: center;
+}
+
 input {
   border: 1px solid var(--paleblue);
   outline: 0;
-  padding: .7rem 1.5rem;
+  padding: .65rem 1.5rem;
   border-radius: 1.5rem;
   width: 230px;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 12px;
+  color: var(--verydarkblue);
 }
 
 input::placeholder {
@@ -58,7 +65,7 @@ input::placeholder {
 button {
   border: 0;
   outline: 0;
-  padding: .7rem 1.5rem;
+  padding: .65rem 1.5rem;
   border-radius: 1.5rem;
   width: 100%;
   background-color: var(--blue);
@@ -68,6 +75,7 @@ button {
   font-weight: 600;
   color: white;
   transition: .1s ease-in-out;
+  box-shadow: 0 3px 15px rgb(79, 125, 243, 0.4);
 }
 
 button:hover { /* adjust for JS later */
@@ -76,7 +84,7 @@ button:hover { /* adjust for JS later */
 
 main img {
   width:320px;
-  margin-top: 3rem;
+  margin-top: 2.5rem;
   margin-bottom: 6rem;
 }
 
