@@ -1,56 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href="styles.css" rel="stylesheet">
-  <link href="text-styles.css" rel="stylesheet">
-  <link href="media-min600px.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link href="styles.css" rel="stylesheet">
+    <link href="text-styles.css" rel="stylesheet">
+    <link href="media-min600px.css" rel="stylesheet">
 
-  <title>Frontend Mentor | Ping coming soon page</title>
-</head>
-<body>
-  <div id="wrapper">
-    <div id="container">
-      <header>
-        <img src="images/logo.svg" alt="PING. logotype">
-      </header>
-      <hgroup>
-        <h1>We are launching <strong>soon!</strong></h1>
-        <p>Subscribe and get notified</p>
-      </hgroup>
-      <form>
-        <div id="main-input-div">
-          <input type="text" id="email" placeholder="Your email address..." required>
-          <p id="error-message" style="display:none;">Please provide a valid email address</p>
-        </div>
-        <button type="submit">Notify Me</button>
-      </form>
-      <main>
-        <img src="images/illustration-dashboard.png">
-      </main>
-      <footer>
-        <div id="social-media">
-          <i class="fa-brands fa-facebook-f"></i>
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-instagram"></i>
-        </div>
-        <p>&copy; Copyright Ping. All rights reserved.</p>
-      </footer>
-    </div> <!-- end "container" -->
-  </div> <!-- end "wrapper" -->
+    <title>Frontend Mentor | Ping coming soon page</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="container">
+        <header>
+          <img src="images/logo.svg" alt="PING. logotype">
+        </header>
+        <hgroup>
+          <h1>We are launching <strong>soon!</strong></h1>
+          <p>Subscribe and get notified</p>
+        </hgroup>
+        <form id="email-form" name="emailform" action="#" onsubmit="event.preventDefault()">
+          <div id="main-input-div">
+            <input type="text" id="email-field" name="emailaddress" placeholder="Your email address...">
+            <p id="error-message" style="display:none;"></p>
+            <p id="thank-you-message" style="display:none;"></p>
+          </div>
+          <button type="submit" id="submit-button" onclick="validateEmail(emailaddress)">Notify Me</button>
+        </form>
+        <main>
+          <img src="images/illustration-dashboard.png" id="graphs">
+        </main>
+        <footer>
+          <div id="social-media">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <p>&copy; Copyright Ping. All rights reserved.</p>
+        </footer>
+      </div> <!-- end "container" -->
+    </div> <!-- end "wrapper" -->
 
-    <!--    <footer>
-      <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>-->
-</body>
+      <!--    <footer>
+        <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer>-->
+    <script src="script.js"></script>
+  </body>
 </html>

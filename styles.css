@@ -42,7 +42,9 @@ form {
 }
 
 #main-input-div {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 input {
@@ -64,7 +66,7 @@ input::placeholder {
 }
 
 button {
-  border: 0;
+  border: 1px solid var(--blue);
   outline: 0;
   padding: .65rem 1.5rem;
   border-radius: 1.5rem;
@@ -76,9 +78,11 @@ button {
   color: white;
   transition: .1s ease-in-out;
   box-shadow: 0 3px 15px rgb(79, 125, 243, 0.4);
+  cursor: pointer;
 }
 
-button:hover { /* adjust for JS later */
+button:hover {
+  border: 1px solid transparent;
   background-color: rgb(79, 125, 243, 0.9);
 }
 
