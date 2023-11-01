@@ -53,6 +53,8 @@ footer p {
 }
 
 .attribution { 
+  margin-top: .5rem;
+  color: var(--verydarkblue);
   font-size: 11px; 
   text-align: center; 
 }
