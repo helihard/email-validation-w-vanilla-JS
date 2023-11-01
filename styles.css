@@ -16,11 +16,11 @@ body {
 
 #wrapper {
   width: 100vw;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 3rem;
 }
 
 #container {
@@ -67,6 +67,7 @@ button {
   font-size: 12px;
   font-weight: 600;
   color: white;
+  transition: .1s ease-in-out;
 }
 
 button:hover { /* adjust for JS later */
@@ -75,6 +76,8 @@ button:hover { /* adjust for JS later */
 
 main img {
   width:320px;
+  margin-top: 3rem;
+  margin-bottom: 6rem;
 }
 
 footer {
@@ -87,29 +90,28 @@ footer {
   display: flex;
   justify-content: center;
   gap: .5rem;
-  color: var(--blue);
 }
 
 #social-media i {
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   border: 1px solid var(--paleblue);
   padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
+  font-size: 14px;
+  color: var(--blue);
+  transition: .1s ease-in-out;
+}
+
+#social-media i:first-child, #social-media i:last-child {
+  font-size: 16px;
 }
 
 #social-media i:hover { /* adjust for JS later */
   color: white;
   background-color: var(--blue);
   border: 1px solid var(--blue);
-}
-
-#social-media i:first-child {
-  padding-left: 12px;
-  width: 13px;
-}
-
-#social-media i:last-child {
-  padding-left: 11px;
-  width: 14px;
 }
